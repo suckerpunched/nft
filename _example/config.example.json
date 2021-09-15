@@ -1,0 +1,41 @@
+{
+    "name_format": "My Example Drop #{0}",
+    "design": [
+        "variable.background",
+        "variable.circle",
+        "static.circle_outline",
+        "optional.line",
+        "optional.line_outline"
+    ],
+    "build_config": {
+        "variable": {
+            "background": {
+                "cyan": "_example/imgs/background/cyan.png"
+            },
+            "circle": {
+                "blue": "_example/imgs/circle/blue.png",
+                "orange": "_example/imgs/circle/orange.png"
+            }
+        },
+        "static": {
+            "circle_outline": "_example/imgs/circle/outline.png"
+        }, 
+        "optional": {
+            "line": {
+                "static": {
+                    "line_outline": "_example/imgs/line/outline.png"
+                },  
+                "variations": {
+                    ".250": {
+                        "suffix":"S",
+                        "data": "_example/imgs/line/green.png"
+                    },
+                    ".500": {
+                        "suffix":"U",
+                        "data": "_example/imgs/line/pink.png"
+                    }
+                }
+            }
+        }
+    }
+}
